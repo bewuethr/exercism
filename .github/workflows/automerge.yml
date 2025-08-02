@@ -8,7 +8,7 @@ permissions:
 jobs:
   merge:
     name: Merge sync PRs
-    if: github.event.pull_request.user.login == 'app/exercism-solutions-syncer'
+    if: github.event.pull_request.user.login == 'exercism-solutions-syncer[bot]'
     runs-on: ubuntu-24.04
     steps:
       - name: Merge PR
